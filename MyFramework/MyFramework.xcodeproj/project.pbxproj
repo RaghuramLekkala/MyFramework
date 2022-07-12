@@ -7,29 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		89EC110D287C54CC000086DD /* MyFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89EC1103287C54CC000086DD /* MyFramework.framework */; };
-		89EC1112287C54CC000086DD /* MyFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89EC1111287C54CC000086DD /* MyFrameworkTests.swift */; };
 		89EC1114287C54CC000086DD /* MyFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 89EC1106287C54CC000086DD /* MyFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		89EC1120287C55B0000086DD /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89EC111F287C55B0000086DD /* Service.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		89EC110E287C54CC000086DD /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 89EC10FA287C54CC000086DD /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 89EC1102287C54CC000086DD;
-			remoteInfo = MyFramework;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		89EC1103287C54CC000086DD /* MyFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MyFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		89EC1106287C54CC000086DD /* MyFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyFramework.h; sourceTree = "<group>"; };
 		89EC1107287C54CC000086DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		89EC110C287C54CC000086DD /* MyFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		89EC1111287C54CC000086DD /* MyFrameworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFrameworkTests.swift; sourceTree = "<group>"; };
-		89EC1113287C54CC000086DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		89EC111F287C55B0000086DD /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -41,14 +26,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		89EC1109287C54CC000086DD /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				89EC110D287C54CC000086DD /* MyFramework.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -56,7 +33,6 @@
 			isa = PBXGroup;
 			children = (
 				89EC1105287C54CC000086DD /* MyFramework */,
-				89EC1110287C54CC000086DD /* MyFrameworkTests */,
 				89EC1104287C54CC000086DD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -65,7 +41,6 @@
 			isa = PBXGroup;
 			children = (
 				89EC1103287C54CC000086DD /* MyFramework.framework */,
-				89EC110C287C54CC000086DD /* MyFrameworkTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -78,15 +53,6 @@
 				89EC111F287C55B0000086DD /* Service.swift */,
 			);
 			path = MyFramework;
-			sourceTree = "<group>";
-		};
-		89EC1110287C54CC000086DD /* MyFrameworkTests */ = {
-			isa = PBXGroup;
-			children = (
-				89EC1111287C54CC000086DD /* MyFrameworkTests.swift */,
-				89EC1113287C54CC000086DD /* Info.plist */,
-			);
-			path = MyFrameworkTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -121,24 +87,6 @@
 			productReference = 89EC1103287C54CC000086DD /* MyFramework.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		89EC110B287C54CC000086DD /* MyFrameworkTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 89EC111A287C54CC000086DD /* Build configuration list for PBXNativeTarget "MyFrameworkTests" */;
-			buildPhases = (
-				89EC1108287C54CC000086DD /* Sources */,
-				89EC1109287C54CC000086DD /* Frameworks */,
-				89EC110A287C54CC000086DD /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				89EC110F287C54CC000086DD /* PBXTargetDependency */,
-			);
-			name = MyFrameworkTests;
-			productName = MyFrameworkTests;
-			productReference = 89EC110C287C54CC000086DD /* MyFrameworkTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -151,9 +99,6 @@
 					89EC1102287C54CC000086DD = {
 						CreatedOnToolsVersion = 12.4;
 						LastSwiftMigration = 1240;
-					};
-					89EC110B287C54CC000086DD = {
-						CreatedOnToolsVersion = 12.4;
 					};
 				};
 			};
@@ -171,20 +116,12 @@
 			projectRoot = "";
 			targets = (
 				89EC1102287C54CC000086DD /* MyFramework */,
-				89EC110B287C54CC000086DD /* MyFrameworkTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		89EC1101287C54CC000086DD /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		89EC110A287C54CC000086DD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -202,23 +139,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		89EC1108287C54CC000086DD /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				89EC1112287C54CC000086DD /* MyFrameworkTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		89EC110F287C54CC000086DD /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 89EC1102287C54CC000086DD /* MyFramework */;
-			targetProxy = 89EC110E287C54CC000086DD /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		89EC1115287C54CC000086DD /* Debug */ = {
@@ -392,42 +313,6 @@
 			};
 			name = Release;
 		};
-		89EC111B287C54CC000086DD /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = MyFrameworkTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.popcornapps.MyFrameworkTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		89EC111C287C54CC000086DD /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = MyFrameworkTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.popcornapps.MyFrameworkTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -445,15 +330,6 @@
 			buildConfigurations = (
 				89EC1118287C54CC000086DD /* Debug */,
 				89EC1119287C54CC000086DD /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		89EC111A287C54CC000086DD /* Build configuration list for PBXNativeTarget "MyFrameworkTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				89EC111B287C54CC000086DD /* Debug */,
-				89EC111C287C54CC000086DD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
